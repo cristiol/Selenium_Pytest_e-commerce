@@ -25,7 +25,6 @@ class TestE2E(BasePage):
         assert confirmation == 'Thank you for your order!'
         self.close()
 
-
 def test1():
     test_e2e_object = TestE2E()
     test_e2e_object.e2e(TestData.username,TestData.password,TestData.product1_add_to_cart_field)

@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 import pytest
 from utilities.test_data import TestData
 
+
 @pytest.fixture(params=['firefox', 'chrome', 'edge'])
 def initialize_driver(request):
     if request.param == 'firefox':
