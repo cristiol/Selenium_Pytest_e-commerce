@@ -14,7 +14,7 @@ def initialize_driver(request):
         driver = webdriver.Edge()
 
     request.cls.driver = driver
-    print("Browser:",request.param)
+    print("Browser:", request.param)
     driver.get(TestData.url)
     yield
     print("Close Driver")
